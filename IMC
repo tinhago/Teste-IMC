@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ float peso, altura, imc;
+
+    printf("Informe seu peso ");
+    scanf("%f", & peso);
+
+    printf("Informe sua altura ");
+    scanf("%f", & altura);
+
+    imc = peso/(altura*altura);
+
+    if(imc<20)
+        {
+            printf("IMC= %f, Abaixo do peso",imc);
+        }else{
+            if(imc<25){
+                printf("IMC= %f, Peso ideal",imc);
+            }else{
+                printf("IMC= %f, Acima do peso",imc);
+            }
+
+        }
+return 0;
+}
